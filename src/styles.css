@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #E8F5FC;
+  color: #699AB6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.calculator-container {
+  padding: 32px 24px;
+  width: 350px; 
+  background-color: #E8F5FC;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5), -6px -6px 10px rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+}
+
+.input {
+  text-align: right;
+  padding: 12px 8px;
+  font-family: monospace;
+  border-radius: 6px;
+  background-color: #B0E0E6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.result {
+  color: #0a629d;
+  text-align: right;
+  padding: 12px 8px;
+  font-family: monospace;
+  border-radius: 6px;
+  background-color: #B0E0E6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 16px 13px;
+  grid-template-columns: repeat(4, 60px); 
+  justify-content: center;
+}
+
+button {
+  background-color: #E8F5FC;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5), -6px -6px 10px rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  color: #699AB6;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 1.5rem;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #e0e8e7;
+}
+
+button:active {
+  box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.5), inset -6px -6px 10px rgba(255, 255, 255, 0.6);
+}
+
+button.functions {
+  color: #6283fc;
+}
+
+.operation-btn {
+  
+  
+  font-weight: 900; 
+  transition: background-color 0.2s ease;
+}
+
+.operation-btn:hover {
+  background-color: #0762be; 
+  color: white;
+}
+
+button.operation-btn:active {
+  box-shadow: inset 6px 6px 10px rgba(0, 2, 18, 0.5), inset -6px -6px 10px rgba(166, 186, 237, 0.6);
+}
+.equal-operator { 
+  font-weight: 900; 
+  transition: background-color 0.2s ease;
+
+}
+.equal-operator:hover {
+  background-color: #0762be; 
+  color: white;
+}
+.equal-operator:active {
+  box-shadow: inset 6px 6px 10px rgba(0, 2, 18, 0.5), inset -6px -6px 10px rgba(166, 186, 237, 0.6);
+}
+button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator-container {
+    width: 90%;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 45px); 
+  }
+}

@@ -3,6 +3,7 @@ import { create, all } from 'mathjs';
 import './styles.css';  
 
 
+
 const math = create(all);  
 
 const Calculator: React.FC = () => {  

@@ -1,10 +1,7 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Ensure this matches your React files (js, jsx, ts, or tsx)
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"], 
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
